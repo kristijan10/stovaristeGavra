@@ -1,0 +1,80 @@
+:root {
+  --button-padding-horizontal: 15px;
+  --button-padding-vertical: 45px;
+  --button-background: #f17310;
+  --button-color: #fff;
+  --hero__text-title-font-size: 2rem;
+}
+.hero {
+  height: calc(100vh - var(--navbar-height));
+  position: relative;
+
+  // Hero image
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-image: url(../../../assets/hero/hero.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  &__inner {
+    height: 100%;
+    padding: 0 var(--navbar-padding-vertical);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+
+    &-title {
+      font-size: var(--hero__text-title-font-size);
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  :root {
+    --hero__text-title-font-size: 2.1rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  :root {
+    --hero__text-title-font-size: 2.2rem;
+  }
+}
+
+// Helper classes
+.orange-btn {
+  display: inline-block;
+  padding: var(--button-padding-horizontal) var(--button-padding-vertical);
+  background: var(--button-background);
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--button-color);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

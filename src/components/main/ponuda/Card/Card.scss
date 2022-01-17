@@ -1,0 +1,41 @@
+:root {
+  --card-color: #fff;
+  --card-background-color: var(--orange-color);
+  --card__body-title-font-size: 22px;
+  --card__body-title-bg-color: var(--darkgrey-color);
+  --card__body-title-padding-horizontal: 5px;
+  --card__body-title-padding-vertical: 50px;
+  --card__body-desc-padding-bottom: 10px;
+}
+
+.card {
+  color: var(--card-color);
+  background-color: var(--card-background-color);
+  width: 350px;
+
+  &__header {
+    &-img {
+      width: 100%;
+      max-width: 450px;
+      height: 230px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-title {
+      font-size: var(--card__body-title-font-size);
+      color: var(--card__body-title-color);
+      background-color: var(--card__body-title-bg-color);
+      padding: var(--card__body-title-padding-horizontal)
+        var(--card__body-title-padding-vertical);
+    }
+
+    &-desc {
+      padding-bottom: var(--card__body-desc-padding-bottom);
+    }
+  }
+}

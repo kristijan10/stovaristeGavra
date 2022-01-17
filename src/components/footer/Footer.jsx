@@ -11,7 +11,7 @@ import "./Footer.scss";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="kontakt">
       <div className="logo__holder">
         <img src={logo} alt="Footer logo" />
       </div>

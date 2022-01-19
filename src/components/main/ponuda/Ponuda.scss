@@ -21,8 +21,9 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
+      "."
       "."
       "."
       "."
@@ -39,9 +40,10 @@
   .ponuda {
     &__grid {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       gap: 10px 10px;
       grid-template-areas:
+        ". ."
         ". ."
         ". ."
         ". .";
@@ -53,8 +55,9 @@
   .ponuda {
     &__grid {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
+        ". . ."
         ". . ."
         ". . .";
     }

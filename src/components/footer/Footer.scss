@@ -26,7 +26,8 @@
   }
 
   .map__title,
-  .contact__title {
+  .contact__title,
+  .time__title {
     font-size: var(--footer-title-fz);
     position: relative;
     width: fit-content;
@@ -59,7 +60,7 @@
       flex-direction: row;
       align-items: center;
 
-      &-icon img {
+      & img {
         width: 40px;
         height: 25px;
       }
@@ -69,6 +70,69 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .footer {
+    display: grid;
+    grid-template-areas:
+      "map map map map"
+      "logo time contact contact"
+      "logo time contact contact"
+      "small small small small";
+    align-items: unset;
+
+    .logo__holder {
+      grid-area: logo;
+
+      & img {
+        width: 110px;
+        height: 80px;
+      }
+    }
+
+    .map__holder {
+      grid-area: map;
+    }
+
+    .contact__holder {
+      grid-area: contact;
+    }
+    .time__holder {
+      grid-area: time;
+    }
+    .copyright {
+      grid-area: small;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer {
+    display: grid;
+    grid-template-areas:
+      "logo contact time map map"
+      "logo contact time map map"
+      "small small small small small";
+
+    .logo__holder {
+      grid-area: logo;
+    }
+
+    .map__holder {
+      grid-area: map;
+    }
+
+    .contact__holder {
+      grid-area: contact;
+    }
+    .time__holder {
+      grid-area: time;
+    }
+    .copyright {
+      grid-area: small;
     }
   }
 }

@@ -8,6 +8,7 @@ import {
   gradjMaterijal,
   usluge,
   ugalj,
+  mrkiUgalj,
 } from "./Card/cards";
 import Card from "./Card/Card";
 
@@ -21,6 +22,11 @@ export default function Ponuda() {
         <h2>Ponuda</h2>
       </div>
       <div className="ponuda__grid">
+        <Card
+          slika={mrkiUgalj.slika}
+          title={mrkiUgalj.title}
+          vrste={mrkiUgalj.vrste}
+        />
         <Card
           slika={ogrevMaterijal.slika}
           title={ogrevMaterijal.title}

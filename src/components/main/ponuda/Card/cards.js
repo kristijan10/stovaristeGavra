@@ -1,5 +1,6 @@
 import imgOgrMaterijal from "../../../../assets/ponuda/ogrevniMaterijal.jpg";
 import imgUgalj from "../../../../assets/ponuda/ugalj.jpg";
+import imgMrkiUgalj from "../../../../assets/ponuda/mrki.jpg";
 import imgOgrDrvo from "../../../../assets/ponuda/drva.jpg";
 import imgPelet from "../../../../assets/ponuda/pelet.jpg";
 import imgGradjMaterijal from "../../../../assets/ponuda/gradjMaterijal.jpg";
@@ -15,6 +16,11 @@ export const ugalj = {
   title: "Mrko-Lignitni Ugalj",
   vrste: ["Pljevlja", "Ugljevik"],
 };
+export const mrkiUgalj = {
+  slika: imgMrkiUgalj,
+  title: "Mrki Ugalj",
+  vrste: ["Banović (orah i kocka)", "Ruski"],
+};
 export const ogrevDrvo = {
   slika: imgOgrDrvo,
   title: "Ogrevno Drvo",
@@ -23,7 +29,7 @@ export const ogrevDrvo = {
 export const pelet = {
   slika: imgPelet,
   title: "Pelet",
-  vrste: ["Numanović", "Špik Ivanjica", "DrvoTeks"],
+  vrste: ["Numanović", "Špik Ivanjica", "DrvoTeks", "Eko step"],
 };
 export const gradjMaterijal = {
   slika: imgGradjMaterijal,

@@ -1,5 +1,8 @@
 import React from "react";
 
+// Image
+import oNama from "../../../assets/about/about.jpg";
+
 // SCSS
 import "./About.scss";
 
@@ -7,7 +10,11 @@ export default function About() {
   return (
     <section className="about" id="o-nama">
       <div className="about__image">
-        <div className="img"></div>
+        <img
+          src={oNama}
+          alt="Slika vozila koje stovariste Gavra poseduje."
+          className="img"
+        />
       </div>
       <div className="about__text">
         <div className="about__text-title">

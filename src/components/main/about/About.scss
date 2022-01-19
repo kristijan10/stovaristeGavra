@@ -15,6 +15,12 @@
   background-color: var(--darkgrey-color);
   padding: var(--about-padding-horizontal) var(--about-padding-vertical);
 
+  &__image {
+    .img {
+      height: 100%;
+    }
+  }
+
   &__text {
     text-align: center;
     display: flex;
@@ -55,10 +61,6 @@
 
     &__image {
       grid-area: img;
-
-      .img {
-        height: 100%;
-      }
     }
 
     &__text {
@@ -81,6 +83,5 @@
 
 .img {
   width: 100%;
-  height: clamp(100px, 80vw, 400px);
-  background-color: rgb(143, 143, 143);
+  // height: clamp(100px, 80vw, 400px);
 }

@@ -36,6 +36,12 @@
 
     &-desc {
       padding-bottom: var(--card__body-desc-padding-bottom);
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
     }
   }
 }

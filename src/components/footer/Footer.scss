@@ -83,9 +83,12 @@
       "logo time contact contact"
       "small small small small";
     align-items: unset;
+    justify-content: unset;
 
     .logo__holder {
       grid-area: logo;
+      justify-content: center;
+      display: flex;
 
       & img {
         width: 110px;
@@ -99,12 +102,15 @@
 
     .contact__holder {
       grid-area: contact;
+      align-items: center;
     }
     .time__holder {
       grid-area: time;
+      align-items: center;
     }
     .copyright {
       grid-area: small;
+      padding-top: 20px;
     }
   }
 }

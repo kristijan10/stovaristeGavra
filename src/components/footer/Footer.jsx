@@ -32,7 +32,7 @@ export default function Footer() {
             <div className="street-info">
               <ul>
                 <li>11275 Jakovo</li>
-                <li>Brace Bugar 32</li>
+                <li>Bagremova 1</li>
               </ul>
             </div>
           </div>
@@ -43,13 +43,13 @@ export default function Footer() {
             <div className="phone-info">
               <ul>
                 <li>
-                  <a href="tel:+381 643051812">+381 643051812</a>
+                  <a href="tel:+381 645436607">+381 645436607</a>
                 </li>
                 <li>
-                  <a href="tel:+381 643051812">+381 643051812</a>
+                  <a href="tel:+381 63254433">+381 63254433</a>
                 </li>
                 <li>
-                  <a href="tel:+381 643051812">+381 643051812</a>
+                  <a href="tel:+381 008443375">+381 008443375</a>
                 </li>
               </ul>
             </div>
@@ -61,9 +61,7 @@ export default function Footer() {
             <div className="email-info">
               <ul>
                 <li>
-                  <a href="emailto:stovariste@gmail.com">
-                    stovariste@gmail.com
-                  </a>
+                  <a href="emailto:strgavra@gmail.com">strgavra@gmail.com</a>
                 </li>
               </ul>
             </div>
@@ -74,16 +72,16 @@ export default function Footer() {
         <h4 className="time__title">Radno vreme</h4>
         <div className="time-weekdays">
           <ul>
-            <li>ponedeljak/petak</li>
-            <li>7:00 - 16:30h</li>
+            <li>ponedeljak/subota</li>
+            <li>8:00 - 16:00h</li>
           </ul>
         </div>
-        <div className="time-weekends">
+        {/* <div className="time-weekends">
           <ul>
-            <li>subota</li>
-            <li>7:30 - 15:30h</li>
+            <li>nedelja</li>
+            <li>Neradna</li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="copyright">
         <small>&copy;2021. Sva prava zadrzana.</small>

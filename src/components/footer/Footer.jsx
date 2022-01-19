@@ -71,6 +71,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="time__holder">
+        <h4 className="time__title">Radno vreme</h4>
         <div className="time-weekdays">
           <ul>
             <li>ponedeljak/petak</li>

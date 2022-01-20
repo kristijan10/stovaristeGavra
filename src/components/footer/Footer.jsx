@@ -49,7 +49,7 @@ export default function Footer() {
                   <a href="tel:+381 63254433">+381 63254433</a>
                 </li>
                 <li>
-                  <a href="tel:+381 008443375">+381 008443375</a>
+                  <a href="tel:+381 008443475">+381 008443475</a>
                 </li>
               </ul>
             </div>
